@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .glass-dark {
+    background: rgba(0, 44, 77, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 44, 77, 0.1);
+  }
+
+  /* Zoho Form Styling */
+  .zoho-form-container iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    border: none !important;
+    border-radius: 8px !important;
+  }
+}
