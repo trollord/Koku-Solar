@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
 
 export default function FooterNav() {
   const services = [
@@ -29,7 +29,7 @@ export default function FooterNav() {
               <img
                 src="/image.png"
                 alt="Koku Solar"
-                className="h-12 w-auto filter brightness-0 invert"
+                className="h-12 w-auto"
               />
             </div>
 
@@ -68,9 +68,9 @@ export default function FooterNav() {
             <ul className="space-y-2">
               {services.map((item, index) => (
                 <li key={index}>
-                  <span className="text-white hover:text-koku-orange transition-colors text-sm cursor-pointer">
+                  <Link to="/services" className="text-white hover:text-koku-orange transition-colors text-sm cursor-pointer">
                     {item}
-                  </span>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -92,20 +92,40 @@ export default function FooterNav() {
           <div>
             <h3 className="text-lg font-bold mb-4">Follow Us</h3>
             <div className="flex gap-4 mb-6">
-              <a 
-                href="#" 
+              <a
+                href="https://www.facebook.com/profile.php?id=61591260590853"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
                 className="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center hover:bg-koku-orange hover:text-koku-dark transition-all"
               >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="https://x.com/KokuSolarIndia"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
                 className="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center hover:bg-koku-orange hover:text-koku-dark transition-all"
               >
-                <Twitter className="w-5 h-5" />
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="w-5 h-5" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
               </a>
-              <a 
-                href="#" 
+              <a
+                href="https://www.instagram.com/kokusolarindia"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center hover:bg-koku-orange hover:text-koku-dark transition-all"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/kokusolar"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
                 className="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center hover:bg-koku-orange hover:text-koku-dark transition-all"
               >
                 <Linkedin className="w-5 h-5" />
