@@ -16,7 +16,7 @@ export default function Navigation() {
     { path: '/about', label: 'About Us' },
     { path: '/services', label: 'Services' },
     { path: '/projects', label: 'Projects' },
-    { path: '/blog', label: 'Blog' },
+    // { path: '/blog', label: 'Blog' }, // temporarily hidden
     { path: '/contact', label: 'Contact' },
   ];
 

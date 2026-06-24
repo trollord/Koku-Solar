@@ -16,7 +16,7 @@ export default function FooterNav() {
     { name: 'About Us', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Blog', path: '/blog' },
+    // { name: 'Blog', path: '/blog' }, // temporarily hidden
     { name: 'Contact', path: '/contact' },
   ];
 
