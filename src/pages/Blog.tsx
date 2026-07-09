@@ -28,64 +28,9 @@ export default function Blog() {
       readTime: "4 min read",
       image: "https://images.pexels.com/photos/9875415/pexels-photo-9875415.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
-    {
-      id: 1,
-      title: "Solar for CHSL — Maharashtra Approval Guide",
-      slug: "chsl-approval-process-maharashtra",
-      excerpt: "Complete guide to DISCOM approvals, MERC guidelines, net metering steps, timelines, and common delays for housing societies.",
-      category: "CHSL",
-      author: "Koku Solar Team",
-      date: "December 15, 2024",
-      readTime: "8 min read",
-      image: "https://images.pexels.com/photos/8853502/pexels-photo-8853502.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      id: 2,
-      title: "Estimating Solar Savings for Commercial Buildings",
-      slug: "commercial-solar-savings-estimation",
-      excerpt: "Understanding tariff structure, demand charges, energy offset logic, and realistic ROI calculations for commercial installations.",
-      category: "Commercial",
-      author: "Koku Solar Team",
-      date: "December 12, 2024",
-      readTime: "10 min read",
-      image: "https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      id: 3,
-      title: "Industrial Solar — What Affects Your Payback?",
-      slug: "industrial-solar-payback-factors",
-      excerpt: "Key factors affecting payback periods for industrial solar installations including load patterns, tariff structures, and system sizing.",
-      category: "Industrial",
-      author: "Koku Solar Team",
-      date: "December 10, 2024",
-      readTime: "7 min read",
-      image: "https://images.pexels.com/photos/9875415/pexels-photo-9875415.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      id: 4,
-      title: "Understanding DISCOM Net Metering",
-      slug: "discom-net-metering-guide",
-      excerpt: "Comprehensive guide to net metering processes, documentation requirements, and timelines across Maharashtra DISCOMs.",
-      category: "Regulations",
-      author: "Koku Solar Team",
-      date: "December 8, 2024",
-      readTime: "9 min read",
-      image: "https://images.pexels.com/photos/1001435/pexels-photo-1001435.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      id: 5,
-      title: "Importance of Monitoring & AMC",
-      slug: "solar-monitoring-amc-importance",
-      excerpt: "Why continuous monitoring and annual maintenance contracts are essential for optimal solar system performance and longevity.",
-      category: "Maintenance",
-      author: "Koku Solar Team",
-      date: "December 5, 2024",
-      readTime: "6 min read",
-      image: "https://images.pexels.com/photos/2850347/pexels-photo-2850347.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
   ];
 
-  const categories = ['All', 'CHSL', 'Commercial', 'Industrial', 'Regulations', 'Maintenance'];
+  const categories = ['All', 'CHSL', 'Regulations'];
 
   const getFilteredPosts = () => {
     if (activeCategory === 'All') {
