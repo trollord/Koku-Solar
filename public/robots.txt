@@ -1,0 +1,42 @@
+# GEO-Optimized robots.txt
+
+# 1. Standard Search Engines (Crucial for Google AI Overviews)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# 2. OpenAI (Explicitly allows ChatGPT Search to crawl & cite you)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# 3. Anthropic (Allows Claude Search to retrieve your content)
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# 4. Perplexity AI (Crucial for real-time citations in Perplexity answers)
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# 5. Optional: Block AI Training Bots (If you want to protect your IP from raw model training)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+# 6. Direct AI Bots to Your Sitemap for Faster Indexing
+Sitemap: https://kokusolar.com/sitemap.xml

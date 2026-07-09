@@ -7,6 +7,28 @@ export default function Blog() {
 
   const blogPosts = [
     {
+      id: 6,
+      title: "PM Surya Ghar Yojana: Why Waiting Costs Your Society Lakhs",
+      slug: "pm-surya-ghar-yojana-society-subsidy",
+      excerpt: "The PM Surya Ghar Yojana ends on 31st March 2027 and offers ₹18,000 per kW (30% of cost) for housing societies. Here's the full roadmap and why waiting costs lakhs.",
+      category: "Regulations",
+      author: "Koku Solar Team",
+      date: "July 9, 2026",
+      readTime: "6 min read",
+      image: "https://images.pexels.com/photos/8853502/pexels-photo-8853502.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      id: 7,
+      title: "Are You Adding Unnecessary Weight to Your Terrace Slab?",
+      slug: "rooftop-solar-structure-terrace-slab-weight",
+      excerpt: "Why heavy steel I-beam mounting structures are a red flag for housing societies — and how factory-galvanised, weld-free designs protect your terrace slab for 25 years.",
+      category: "CHSL",
+      author: "Koku Solar Team",
+      date: "July 9, 2026",
+      readTime: "4 min read",
+      image: "https://images.pexels.com/photos/9875415/pexels-photo-9875415.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
       id: 1,
       title: "Solar for CHSL — Maharashtra Approval Guide",
       slug: "chsl-approval-process-maharashtra",
