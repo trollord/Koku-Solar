@@ -49,8 +49,8 @@ export default function FooterNav() {
 
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-koku-orange" />
-                <a href="tel:+918369117558" className="text-white hover:text-koku-orange transition-colors">
-                  +91 83691 17558
+                <a href="tel:+919082566478" className="text-white hover:text-koku-orange transition-colors">
+                  +91 90825 66478
                 </a>
               </div>
 

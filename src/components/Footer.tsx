@@ -59,8 +59,8 @@ export default function Footer() {
 
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5" style={{ color: '#FF8C00' }} />
-                <a href="tel:+919876543210" className="hover:transition-colors" style={{ color: '#FFFFFF' }} onMouseEnter={(e) => e.currentTarget.style.color = '#FF8C00'} onMouseLeave={(e) => e.currentTarget.style.color = '#FFFFFF'}>
-                  +91 98765 43210
+                <a href="tel:+919082566478" className="hover:transition-colors" style={{ color: '#FFFFFF' }} onMouseEnter={(e) => e.currentTarget.style.color = '#FF8C00'} onMouseLeave={(e) => e.currentTarget.style.color = '#FFFFFF'}>
+                  +91 90825 66478
                 </a>
               </div>
 

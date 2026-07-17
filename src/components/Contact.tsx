@@ -235,7 +235,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1" style={{ color: '#1A1A1A' }}>Phone</h4>
-                      <p style={{ color: '#1A1A1A' }}>+91 98765 43210</p>
+                      <p style={{ color: '#1A1A1A' }}>+91 90825 66478</p>
                       <p className="text-sm" style={{ color: '#333333' }}>Mon-Sat, 9 AM - 7 PM</p>
                     </div>
                   </div>

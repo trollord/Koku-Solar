@@ -88,8 +88,8 @@ export default function Contact() {
                   
                   <div className="flex items-center space-x-3">
                     <Phone className="h-6 w-6 text-koku-orange" />
-                    <a href="tel:+918369117558" className="text-gray-700 hover:text-koku-orange transition-colors">
-                      +91 83691 17558
+                    <a href="tel:+919082566478" className="text-gray-700 hover:text-koku-orange transition-colors">
+                      +91 90825 66478
                     </a>
                   </div>
                   
