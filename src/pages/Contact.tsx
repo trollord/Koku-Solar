@@ -1,28 +1,7 @@
-import { useEffect } from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
+import ZohoLeadForm from '../components/ZohoLeadForm';
 
 export default function Contact() {
-  useEffect(() => {
-    // Zoho form script
-    function wfa_pstMesgFrmFom(evt) {
-      if (evt.origin === 'https://crm.zoho.in' || evt.origin === 'https://crm.zohopublic.in') {
-        var loc_obj = JSON.stringify({
-          origin: window.location.origin,
-          pathname: window.location.pathname,
-          search: window.location.search,
-          hash: window.location.hash
-        });
-        evt.source.postMessage(('prnt_wnd_pg_lc_rc_frm_prwindow_' + loc_obj), evt.origin);
-      }
-    }
-    window.addEventListener('message', wfa_pstMesgFrmFom, false);
-
-    // Cleanup
-    return () => {
-      window.removeEventListener('message', wfa_pstMesgFrmFom, false);
-    };
-  }, []);
-
   return (
     <div className="bg-white pt-16">
       <section className="py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50">
@@ -48,20 +27,11 @@ export default function Contact() {
                 Fill out the form below and we'll get back to you within 24 hours with a detailed assessment.
               </p>
               
-              {/* Zoho Form Embed Container */}
-              <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
-                <div className="zoho-form-container flex justify-center">
-                  <iframe
-                    width="610"
-                    height="520"
-                    src="https://crm.zoho.in/crm/WebFormServeServlet?rid=0a39ff9f2a65b70c6b5af1f0e9261bbf6722549867e04d953bf6c040cf698065d0f808e5969ad44b4db02d49d68523cagid82c72a471c1362e8cbd6d3270ccd7518830464839e45dcd396f955fec3d8e033"
-                    frameBorder="0"
-                    title="Solar Assessment Form"
-                    className="rounded-lg max-w-full"
-                  />
-                </div>
+              {/* Zoho Web-to-Lead Form */}
+              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100">
+                <ZohoLeadForm />
                 <p className="text-sm text-gray-500 mt-4 text-center">
-                  Secure form powered by Zoho CRM
+                  🔒 Secure form powered by Zoho CRM
                 </p>
               </div>
             </div>
