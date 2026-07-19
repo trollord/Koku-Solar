@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, User, ArrowLeft, Share2, Clock, FileText } from 'lucide-react';
+import ZohoLeadForm from '../components/ZohoLeadForm';
 
 interface BlogPostData {
   id: number;
@@ -329,27 +330,19 @@ Protect the structural integrity of your building with engineering that puts saf
           </div>
 
           <div className="mt-12 pt-8 border-t border-gray-200">
-            <div className="bg-gradient-to-br from-orange-50 to-white p-8 rounded-2xl border border-orange-100">
-              <div className="flex items-center mb-4">
+            <div className="bg-gradient-to-br from-orange-50 to-white p-6 sm:p-8 rounded-2xl border border-orange-100">
+              <div className="flex items-center mb-2">
                 <FileText className="h-8 w-8 text-koku-orange mr-3" />
-                <h3 className="text-2xl font-bold text-koku-dark">Need Expert Guidance?</h3>
+                <h3 className="text-2xl font-bold text-koku-dark">Book a Free Solar Assessment</h3>
               </div>
               <p className="text-gray-600 mb-6">
-                Get personalized advice for your solar project from our experienced engineering team. We provide detailed feasibility analysis and customized solutions for CHSL, commercial, and industrial installations across Maharashtra.
+                Get personalized advice for your solar project from our experienced engineering team. Fill in your details below and we'll get back to you shortly.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  to="/contact#contact"
-                  className="inline-block bg-koku-orange text-koku-dark px-8 py-3 rounded-full font-semibold hover:bg-yellow-400 transition-all shadow-lg text-center"
-                >
-                  Request Solar Assessment
-                </Link>
-                <Link
-                  to="/contact#contact"
-                  className="inline-block bg-koku-dark text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition-all shadow-lg text-center"
-                >
-                  Contact Us
-                </Link>
+              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100">
+                <ZohoLeadForm />
+                <p className="text-sm text-gray-500 mt-4 text-center">
+                  🔒 Secure form powered by Zoho CRM
+                </p>
               </div>
             </div>
           </div>
