@@ -4,7 +4,7 @@ import ZohoLeadForm from '../components/ZohoLeadForm';
 
 const benefits = [
   'Custom Rooftop Solar Generation Estimate (in kWp)',
-  'Government Subsidy Calculation (Up to ₹78,000)',
+  'Government Subsidy Calculation',
   'Projected ROI & Electricity Bill Reduction',
 ];
 
@@ -60,7 +60,7 @@ export default function FreeFeasibilityReport() {
                 </p>
               </div>
 
-              <ZohoLeadForm compact />
+              <ZohoLeadForm />
             </div>
           </div>
         </div>

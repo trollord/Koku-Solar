@@ -64,19 +64,6 @@ const FORM_HTML = `
   }
   .koku-zoho-form .kf-submit:hover { background: #facc15; }
   .koku-zoho-form .kf-submit:disabled { opacity: 0.6; cursor: not-allowed; }
-
-  /* Compact variant — tighter spacing so the form fits in one viewport */
-  .koku-zoho-form--compact .kf-row { margin-bottom: 0.7rem; }
-  .koku-zoho-form--compact label { margin-bottom: 0.2rem; font-size: 0.875rem; }
-  .koku-zoho-form--compact input[type=text],
-  .koku-zoho-form--compact textarea {
-    padding: 0.5rem 0.85rem;
-    border-radius: 0.45rem;
-  }
-  .koku-zoho-form--compact textarea { min-height: 64px; }
-  .koku-zoho-form--compact .kf-submit { padding: 0.65rem 1rem; }
-  /* Hide optional Message field in compact mode to keep the form within one viewport */
-  .koku-zoho-form--compact .kf-row--message { display: none; }
 </style>
 <div id="crmWebToEntityForm" class="crmWebToEntityForm koku-zoho-form">
   <form
@@ -112,7 +99,7 @@ const FORM_HTML = `
       <label for="Email">Email <span class="kf-req">*</span></label>
       <input type="text" ftype="email" autocomplete="false" id="Email" aria-required="true" aria-label="Email" name="Email" crmlabel="" maxlength="100">
     </div>
-    <div class="kf-row kf-row--message">
+    <div class="kf-row">
       <label for="Description">Message</label>
       <textarea aria-multiline="true" id="Description" aria-required="false" aria-label="Description" name="Description"></textarea>
     </div>
@@ -221,7 +208,7 @@ function tooltipShow385163000003101001(el){
 const ANALYTICS_SRC =
   'https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=5634ae2589a03ab463ba5a2278bbcd9d5d73d307156aca38b1b55e3a834d490f9556db6bfe959b37e3fc45957efec8f3gid2d05e19598d878695bd04c59fe5e9884a5850015b2577ad147803dc4158f8897gida930b39310e4b01051e6b307b0a5a3cf9964a23a753bdc8ec2d90aa91995de70gidfbc2625f16d543baf24330523d5cafed682aba4d2f76e2d069314c8f3aa23062&tw=9543f869c313360ed4a6d3c0b83db697d8da1806f2d13fa3cb6297323a79f9c6&version=v2';
 
-export default function ZohoLeadForm({ compact = false }: { compact?: boolean }) {
+export default function ZohoLeadForm() {
   const containerRef = useRef<HTMLDivElement>(null);
   const initedRef = useRef(false);
 
@@ -231,12 +218,7 @@ export default function ZohoLeadForm({ compact = false }: { compact?: boolean })
     initedRef.current = true;
 
     // 1) Inject the form markup (styles apply; scripts here would NOT run).
-    container.innerHTML = compact
-      ? FORM_HTML.replace(
-          'crmWebToEntityForm koku-zoho-form"',
-          'crmWebToEntityForm koku-zoho-form koku-zoho-form--compact"'
-        )
-      : FORM_HTML;
+    container.innerHTML = FORM_HTML;
 
     // 2) Inject the validation script as a real <script> so it executes and
     //    defines the global checkMandatory/validateEmail functions the form calls.
@@ -268,7 +250,7 @@ export default function ZohoLeadForm({ compact = false }: { compact?: boolean })
     return () => {
       window.removeEventListener('message', wfa_pstMesgFrmFom, false);
     };
-  }, [compact]);
+  }, []);
 
   return <div ref={containerRef} />;
 }
