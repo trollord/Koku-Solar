@@ -15,9 +15,9 @@ export default function FreeFeasibilityReport() {
 
   return (
     <div className="bg-white pt-16">
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-orange-50 via-white to-yellow-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <section className="py-10 lg:py-0 lg:min-h-[calc(100vh-4rem)] lg:flex lg:items-center bg-gradient-to-br from-orange-50 via-white to-yellow-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             {/* Left / Top: Campaign copy */}
             <div>
               <span className="inline-block bg-orange-100 text-koku-dark font-semibold text-sm px-4 py-2 rounded-full mb-6">
@@ -50,9 +50,9 @@ export default function FreeFeasibilityReport() {
             </div>
 
             {/* Right / Bottom: Lead form */}
-            <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 sm:p-8">
-              <div className="text-center mb-6">
-                <h2 className="text-2xl font-bold text-koku-dark mb-1">
+            <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-5 sm:p-6">
+              <div className="text-center mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold text-koku-dark mb-1">
                   Check Your Eligibility &amp; Request Report
                 </h2>
                 <p className="text-sm text-gray-500">
@@ -60,7 +60,7 @@ export default function FreeFeasibilityReport() {
                 </p>
               </div>
 
-              <ZohoLeadForm />
+              <ZohoLeadForm compact />
             </div>
           </div>
         </div>
