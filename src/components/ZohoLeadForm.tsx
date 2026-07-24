@@ -64,6 +64,18 @@ const FORM_HTML = `
   }
   .koku-zoho-form .kf-submit:hover { background: #facc15; }
   .koku-zoho-form .kf-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+  /* Compact variant — tighter spacing only (same fields, same params) so the
+     form is shorter and sits with margin inside a one-viewport layout. */
+  .koku-zoho-form--compact .kf-row { margin-bottom: 0.6rem; }
+  .koku-zoho-form--compact label { margin-bottom: 0.15rem; font-size: 0.85rem; }
+  .koku-zoho-form--compact input[type=text],
+  .koku-zoho-form--compact textarea {
+    padding: 0.45rem 0.8rem;
+    border-radius: 0.45rem;
+  }
+  .koku-zoho-form--compact textarea { min-height: 56px; }
+  .koku-zoho-form--compact .kf-submit { padding: 0.6rem 1rem; }
 </style>
 <div id="crmWebToEntityForm" class="crmWebToEntityForm koku-zoho-form">
   <form
@@ -208,7 +220,7 @@ function tooltipShow385163000003101001(el){
 const ANALYTICS_SRC =
   'https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=5634ae2589a03ab463ba5a2278bbcd9d5d73d307156aca38b1b55e3a834d490f9556db6bfe959b37e3fc45957efec8f3gid2d05e19598d878695bd04c59fe5e9884a5850015b2577ad147803dc4158f8897gida930b39310e4b01051e6b307b0a5a3cf9964a23a753bdc8ec2d90aa91995de70gidfbc2625f16d543baf24330523d5cafed682aba4d2f76e2d069314c8f3aa23062&tw=9543f869c313360ed4a6d3c0b83db697d8da1806f2d13fa3cb6297323a79f9c6&version=v2';
 
-export default function ZohoLeadForm() {
+export default function ZohoLeadForm({ compact = false }: { compact?: boolean }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const initedRef = useRef(false);
 
@@ -218,7 +230,13 @@ export default function ZohoLeadForm() {
     initedRef.current = true;
 
     // 1) Inject the form markup (styles apply; scripts here would NOT run).
-    container.innerHTML = FORM_HTML;
+    //    `compact` only tightens spacing — fields and Zoho params are unchanged.
+    container.innerHTML = compact
+      ? FORM_HTML.replace(
+          'crmWebToEntityForm koku-zoho-form"',
+          'crmWebToEntityForm koku-zoho-form koku-zoho-form--compact"'
+        )
+      : FORM_HTML;
 
     // 2) Inject the validation script as a real <script> so it executes and
     //    defines the global checkMandatory/validateEmail functions the form calls.
@@ -250,7 +268,7 @@ export default function ZohoLeadForm() {
     return () => {
       window.removeEventListener('message', wfa_pstMesgFrmFom, false);
     };
-  }, []);
+  }, [compact]);
 
   return <div ref={containerRef} />;
 }

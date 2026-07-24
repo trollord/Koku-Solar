@@ -51,7 +51,7 @@ export default function FreeFeasibilityReport() {
 
             {/* Right / Bottom: Lead form */}
             <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-5 sm:p-6">
-              <div className="text-center mb-4">
+              <div className="text-center mb-3">
                 <h2 className="text-xl sm:text-2xl font-bold text-koku-dark mb-1">
                   Check Your Eligibility &amp; Request Report
                 </h2>
@@ -60,7 +60,7 @@ export default function FreeFeasibilityReport() {
                 </p>
               </div>
 
-              <ZohoLeadForm />
+              <ZohoLeadForm compact />
             </div>
           </div>
         </div>
