@@ -117,6 +117,117 @@ export default function BlogPost() {
   const [loading, setLoading] = useState(true);
 
   const blogPosts: { [key: string]: BlogPostData } = {
+    'smart-meter-evolution-guide-residents-homeowners': {
+      id: 8,
+      title: "The Smart Meter Evolution: An Independent Expert Guide for Residents & Homeowners",
+      slug: "smart-meter-evolution-guide-residents-homeowners",
+      excerpt: "An objective, independent guide to how smart meters help residents cut electricity bills through Time-of-Day tariffs, Virtual Net Metering, and emerging energy technology.",
+      category: "Regulations",
+      author: "Koku Solar Team",
+      date: "August 7, 2026",
+      readTime: "7 min read",
+      image: "https://images.pexels.com/photos/1001435/pexels-photo-1001435.jpeg?auto=compress&cs=tinysrgb&w=800",
+      content: `
+Note: This article is written from an objective clean-energy perspective. We are not affiliated with any government organisation, DISCOM, or private utility.
+
+## Consumer Rights First: Consent and Transparency
+
+Public frustration surrounding smart meters is understandable. Smart meters should not be forced onto consumers without prior notice, installation consent, or pre-installation wiring checks. However, when deployed transparently, smart meters are not a utility cash grab, they are the single most effective tool consumers have to take control of their electricity bills.
+
+## Why Smart Meters Are Good for You: The Core Benefits
+
+Legacy mechanical meters only recorded total monthly energy consumption. A smart meter records interval data (hourly consumption), turning an opaque utility bill into actionable data.
+
+- **Eliminate Billing Disputes:** Smart meters end estimated billing, manual reader errors, and unexpected back-dated adjustments. You can track exact daily consumption on your smartphone.
+- **Lower Monthly Bills via Time-of-Day Discounts:** Under regulatory frameworks like the Maharashtra Electricity Regulatory Commission (MERC), electricity prices vary by the hour. Smart meters allow you to take advantage of daytime solar discounts amounting to Rs.0.80 per Unit.
+- **Solar Savings for Apartment Residents:** High-rise apartment owners without private rooftops can now participate in community solar through Virtual Net Metering (VNM), which relies on smart meters to credit individual bills.
+- **Energy Choice and Independence:** Smart meters serve as the digital gateway for open energy networks, allowing consumers to choose suppliers or trade solar energy directly.
+
+## The Technology Timeline
+
+### Past: Legacy Grid
+
+- Mechanical spinning meters
+- Flat, opaque monthly billing
+- Zero data visibility
+- Complete utility monopoly lock-in
+
+### Present: Transition and Facts
+
+- Calibrated digital replacement
+- Real-time interval measurement
+
+Myth: Meters raise unit tariffs (False: MERC sets unit rates)
+Fact: Digital meters record true draw without mechanical drift
+
+### Active Financial Gains
+
+- Time-of-Day (ToD) tariff optimisation
+- 9:00 AM to 5:00 PM solar hour rebate
+- Virtual Net Metering (VNM) active for high-rise buildings
+- Smart home load scheduling
+
+### Near Future: Energy Freedom
+
+- Unified Energy Interface (UEI) open protocol
+- Peer-to-peer (P2P) green power trading
+- Automated low-cost EV charging
+- Vehicle-to-Grid (V2G) energy arbitrage
+
+## Fact-Check: Do Smart Meters Raise Your Rates?
+
+No. Electricity unit tariffs are determined exclusively by state regulators like MERC through public hearings, not by the meter hardware.
+
+If your bill increases immediately after a smart meter installation, it is typically due to one of two reasons:
+
+1. Mechanical meters degrade over 10 to 15 years and frequently run slow, under-reporting consumption. Digital meters capture exact, calibrated power draw.
+2. Installations often coincide with seasonal weather shifts (such as summer heat), where air conditioning usage naturally spikes.
+
+## How to Slash Your Bill Using a Smart Meter Today
+
+MERC's Time-of-Day (ToD) tariff structure divides the 24-hour day into specific billing zones:
+
+<table>
+<thead>
+<tr><th>Time Window</th><th>Hours</th><th>Tariff Impact</th><th>Action Strategy</th></tr>
+</thead>
+<tbody>
+<tr><td>Solar Window</td><td>09:00 AM – 05:00 PM</td><td>15% to 25% Discount (Rebate zone)</td><td>Shift heavy appliances (washing machines, pumps, EV chargers) to these hours.</td></tr>
+<tr><td>Normal Window</td><td>00:00 AM – 09:00 AM</td><td>Baseline Standard Rate</td><td>Standard household power draw.</td></tr>
+<tr><td>Evening Peak</td><td>05:00 PM – 12:00 Midnight</td><td>+20% Surcharge (Peak zone)</td><td>Avoid running high-power appliances.</td></tr>
+</tbody>
+</table>
+
+## Virtual Net Metering (VNM) for High-Rises
+
+Under MERC regulations, housing societies can install solar systems on shared terrace roofs or off-site locations. Through Virtual Net Metering, the generated solar credits are digitally divided and subtracted from each individual resident's monthly bill. This system requires a digital smart meter to process interval solar credit allocations.
+
+## The Horizon: UEI and EV Developments
+
+### 1. Unified Energy Interface (UEI)
+
+Similar to how UPI unbundled digital payments across competing banks, the Unified Energy Interface (UEI) is an open-network protocol designed to expand electricity distribution. UEI allows you to buy power from alternative renewable energy providers or community grids instead of being locked into a single utility monopoly.
+
+A smart meter acts as your authenticated digital access point on this network.
+
+### 2. EV Charging and Vehicle-to-Grid (V2G)
+
+Smart meters allow electric vehicle (EV) owners to automate charging during daytime solar discount hours (09:00 AM – 05:00 PM). As bidirectional chargers mature, EV owners will be able to store low-cost daytime solar power in their car batteries and discharge it back to the home or grid during high-cost peak hours (05:00 PM – Midnight), creating a direct revenue stream.
+
+## Action Plan for Homeowners
+
+1. **Schedule Usage:** Program high-load appliances to run between 09:00 AM and 05:00 PM to capture the daytime solar rebate.
+2. **Restrict Peak Draw:** Reduce the use of heavy electric appliances like ACs, Heaters, Dishwashers between 05:00 PM and Midnight to avoid the 20% peak surcharge.
+3. **Adopt Society Solar:** Encourage your apartment management committee to apply for Virtual Net Metering under MERC rules.
+
+## Official References and Regulatory Sources
+
+1. **Tariff Regulation:** MERC Multi-Year Tariff Order (Case No. 217 of 2024), Maharashtra Electricity Regulatory Commission.
+2. **Virtual Net Metering Framework:** MERC Grid-Interactive RE Regulations, MSEDCL Portal.
+3. **Open Energy Standards:** Unified Energy Interface (UEI) Architecture, UEI Alliance.
+4. **Consumer Guidelines:** Revamped Distribution Sector Scheme (RDSS) Consumer SOPs, Ministry of Power, Govt. of India.
+      `
+    },
     'pm-surya-ghar-yojana-society-subsidy': {
       id: 6,
       title: "The Clock is Ticking: Why Missing Out on the PM Surya Ghar Yojana Costs Your Society",
@@ -320,7 +431,7 @@ Protect the structural integrity of your building with engineering that puts saf
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-gray-600 mb-8 font-medium">{post.excerpt}</p>
             <div
-              className="text-gray-700 leading-relaxed"
+              className="blog-content text-gray-700 leading-relaxed"
               style={{
                 lineHeight: '1.8',
                 fontSize: '18px'

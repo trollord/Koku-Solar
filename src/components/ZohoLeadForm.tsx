@@ -220,7 +220,13 @@ function tooltipShow385163000003101001(el){
 const ANALYTICS_SRC =
   'https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=5634ae2589a03ab463ba5a2278bbcd9d5d73d307156aca38b1b55e3a834d490f9556db6bfe959b37e3fc45957efec8f3gid2d05e19598d878695bd04c59fe5e9884a5850015b2577ad147803dc4158f8897gida930b39310e4b01051e6b307b0a5a3cf9964a23a753bdc8ec2d90aa91995de70gidfbc2625f16d543baf24330523d5cafed682aba4d2f76e2d069314c8f3aa23062&tw=9543f869c313360ed4a6d3c0b83db697d8da1806f2d13fa3cb6297323a79f9c6&version=v2';
 
-export default function ZohoLeadForm({ compact = false }: { compact?: boolean }) {
+export default function ZohoLeadForm({
+  compact = false,
+  submitLabel = 'Submit',
+}: {
+  compact?: boolean;
+  submitLabel?: string;
+}) {
   const containerRef = useRef<HTMLDivElement>(null);
   const initedRef = useRef(false);
 
@@ -230,13 +236,22 @@ export default function ZohoLeadForm({ compact = false }: { compact?: boolean })
     initedRef.current = true;
 
     // 1) Inject the form markup (styles apply; scripts here would NOT run).
-    //    `compact` only tightens spacing — fields and Zoho params are unchanged.
-    container.innerHTML = compact
-      ? FORM_HTML.replace(
-          'crmWebToEntityForm koku-zoho-form"',
-          'crmWebToEntityForm koku-zoho-form koku-zoho-form--compact"'
-        )
-      : FORM_HTML;
+    //    `compact` only tightens spacing and `submitLabel` only changes the
+    //    button caption — fields and Zoho params are unchanged.
+    let html = FORM_HTML;
+    if (compact) {
+      html = html.replace(
+        'crmWebToEntityForm koku-zoho-form"',
+        'crmWebToEntityForm koku-zoho-form koku-zoho-form--compact"'
+      );
+    }
+    if (submitLabel !== 'Submit') {
+      html = html.replace(
+        'value="Submit" aria-label="Submit" title="Submit"',
+        `value="${submitLabel}" aria-label="${submitLabel}" title="${submitLabel}"`
+      );
+    }
+    container.innerHTML = html;
 
     // 2) Inject the validation script as a real <script> so it executes and
     //    defines the global checkMandatory/validateEmail functions the form calls.
@@ -268,7 +283,7 @@ export default function ZohoLeadForm({ compact = false }: { compact?: boolean })
     return () => {
       window.removeEventListener('message', wfa_pstMesgFrmFom, false);
     };
-  }, [compact]);
+  }, [compact, submitLabel]);
 
   return <div ref={containerRef} />;
 }

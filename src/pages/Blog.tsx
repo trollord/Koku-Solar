@@ -7,6 +7,17 @@ export default function Blog() {
 
   const blogPosts = [
     {
+      id: 8,
+      title: "The Smart Meter Evolution: An Independent Expert Guide for Residents & Homeowners",
+      slug: "smart-meter-evolution-guide-residents-homeowners",
+      excerpt: "An objective, independent guide to how smart meters help residents cut electricity bills through Time-of-Day tariffs, Virtual Net Metering, and emerging energy technology.",
+      category: "Regulations",
+      author: "Koku Solar Team",
+      date: "August 7, 2026",
+      readTime: "7 min read",
+      image: "https://images.pexels.com/photos/1001435/pexels-photo-1001435.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
       id: 6,
       title: "PM Surya Ghar Yojana: Why Waiting Costs Your Society Lakhs",
       slug: "pm-surya-ghar-yojana-society-subsidy",
