@@ -11,7 +11,6 @@ export default function TestimonialSlider() {
       location: "Executive Director, Mec Elec Industrial Services",
       rating: 5,
       project: "90 kW Industrial Installation",
-      image: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=400",
     },
     {
       text: "Our society had been postponing solar for years because we thought the process would be complicated. Koku Solar handled everything — approvals, net-metering, installation, even maintenance. We now save over ₹1.5 lakh a year on society bills. It was the smoothest project we've ever done.",
@@ -19,7 +18,6 @@ export default function TestimonialSlider() {
       location: "Society Secretary",
       rating: 5,
       project: "CHSL Solar Installation",
-      image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400",
     },
     {
       text: "Koku Solar exceeded our expectations. Their engineering accuracy, documentation, and execution were outstanding. Our electricity bill dropped by over 70%, and the system performance is consistently above projections. The entire project was delivered on time with complete transparency.",
@@ -27,7 +25,6 @@ export default function TestimonialSlider() {
       location: "Business Owner",
       rating: 5,
       project: "Commercial Solar System",
-      image: "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=400",
     },
   ];
 
@@ -83,20 +80,11 @@ export default function TestimonialSlider() {
               </blockquote>
 
               {/* Author Info */}
-              <div className="flex items-center justify-center gap-4">
-                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-koku-orange">
-                  <img
-                    src={testimonials[currentSlide].image}
-                    alt={testimonials[currentSlide].author}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="text-center">
-                  <div className="font-bold text-lg text-koku-dark">{testimonials[currentSlide].author}</div>
-                  <div className="text-sm text-gray-700">{testimonials[currentSlide].location}</div>
-                  <div className="text-xs font-semibold mt-1 text-koku-orange">
-                    {testimonials[currentSlide].project}
-                  </div>
+              <div className="text-center">
+                <div className="font-bold text-lg text-koku-dark">{testimonials[currentSlide].author}</div>
+                <div className="text-sm text-gray-700">{testimonials[currentSlide].location}</div>
+                <div className="text-xs font-semibold mt-1 text-koku-orange">
+                  {testimonials[currentSlide].project}
                 </div>
               </div>
             </div>
