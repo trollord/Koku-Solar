@@ -7,6 +7,17 @@ export default function Blog() {
 
   const blogPosts = [
     {
+      id: 9,
+      title: "Understanding Virtual Net Metering (VNM)",
+      slug: "understanding-virtual-net-metering-vnm",
+      excerpt: "How high-rise residents in Maharashtra can beat MSEDCL's steep tariffs with off-site solar and Virtual Net Metering — the pricing model, 20-year savings, and how to apply.",
+      category: "CHSL",
+      author: "Koku Solar Team",
+      date: "August 10, 2026",
+      readTime: "7 min read",
+      image: "https://images.pexels.com/photos/2850347/pexels-photo-2850347.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
       id: 8,
       title: "The Smart Meter Evolution: An Independent Expert Guide for Residents & Homeowners",
       slug: "smart-meter-evolution-guide-residents-homeowners",

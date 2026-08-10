@@ -117,6 +117,90 @@ export default function BlogPost() {
   const [loading, setLoading] = useState(true);
 
   const blogPosts: { [key: string]: BlogPostData } = {
+    'understanding-virtual-net-metering-vnm': {
+      id: 9,
+      title: "Understanding Virtual Net Metering (VNM)",
+      slug: "understanding-virtual-net-metering-vnm",
+      excerpt: "How high-rise residents in Maharashtra can beat MSEDCL's steep tariffs with off-site solar and Virtual Net Metering — the pricing model, 20-year savings, and how to apply.",
+      category: "CHSL",
+      author: "Koku Solar Team",
+      date: "August 10, 2026",
+      readTime: "7 min read",
+      image: "https://images.pexels.com/photos/2850347/pexels-photo-2850347.jpeg?auto=compress&cs=tinysrgb&w=800",
+      content: `
+Living in a high-rise apartment in Maharashtra comes with world-class amenities, but it also comes with one major headache, **your electricity bills**.
+
+The Maharashtra State Electricity Distribution Company Limited (MSEDCL) charges domestic tariffs that are among the highest in India. For residents consuming an average of 600 units per month, the effective tariff climbs to a staggering **₹19.63 per unit** once taxes and duties are factored in.
+
+Until recently, multi-storey residential flat owners were locked out of the solar revolution. Without personal roof access, generating clean power to offset high bills was physically impossible.
+
+That changed with **Virtual Net Metering (VNM)**.
+
+## What is Virtual Net Metering (VNM)?
+
+Virtual Net Metering scheme allows residents of the same Housing Society to come together and source solar power generated off-site.
+
+Here is how it works:
+
+1. **Off-Site Generation:** Instead of installing solar panels on your apartment building, a solar plant is set up at a remote location (e.g., Koku Solar's plant location in Vikramgad, Maharashtra).
+2. **Grid Injection:** The electricity generated at the remote plant is fed directly into the MSEDCL grid.
+3. **Bill Credits:** MSEDCL measures the total solar energy injected and allocates credits directly to your individual home electricity meter (and society common area meters) based on a pre-agreed sharing percentage.
+
+You don't need a single solar panel on your building's roof to enjoy the financial benefits of solar power.
+
+## The Tariff Trap vs. The VNM Advantage
+
+MSEDCL's domestic slab rates are one the highest in the country, keeping you locked into a monopoly and escalate quickly as your consumption increases:
+
+- **0–100 units:** ₹6.06 per unit + 16% Electricity Duty
+- **100–300 units:** ₹12.90 per unit + 16% Electricity Duty
+- **300–500 units:** ₹17.14 per unit + 16% Electricity Duty
+- **Above 500 units:** ₹19.63 per unit + 16% Electricity Duty
+
+**Tariff Rates for the period FY 2026-27 as per MSEDCL**
+
+### The VNM Pricing Model
+
+Under the Koku Solar VNM model, residents lock in power at **₹8 per unit** prepaid at the start of each financial year. Even better, **this tariff reduces by 3% every year for 20 years**.
+
+### Estimated 20-Year Financial Savings
+
+<div style="overflow-x:auto;">
+<table>
+<thead>
+<tr><th>Annual Household Consumption</th><th>Current MSEDCL Variable Bill</th><th>Annual VNM Prepaid Amount</th><th>Annual Net Savings</th><th>Projected 20-Year Savings</th></tr>
+</thead>
+<tbody>
+<tr><td>5,000 kWh</td><td>₹72,168</td><td>₹40,000</td><td><strong>₹32,168</strong></td><td><strong>₹10,43,513</strong></td></tr>
+<tr><td>7,500 kWh</td><td>₹1,26,195</td><td>₹60,000</td><td><strong>₹66,195</strong></td><td><strong>₹20,23,614</strong></td></tr>
+<tr><td>10,000 kWh</td><td>₹1,83,122</td><td>₹80,000</td><td><strong>₹1,03,122</strong></td><td><strong>₹30,77,795</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+## Risk-Free Execution & Legal Precedent
+
+Many society management committees worry about financial risk or regulatory delays. The VNM model is structured to protect consumers completely:
+
+- **Zero Upfront Plant CapEx:** Koku Solar invests its own capital to set up the off-site plant (backed by committed institutional funding of up to ₹50 Crores).
+- **No Approval, No Fee:** A one-time application fee cheque is collected upfront but is deposited only after MSEDCL formally approves the VNM application.
+- **First Month Free:** Once the plant is commissioned, your first month of solar power is supplied completely free of cost.
+- **Complete Maintenance Included:** Koku Solar manages 100% of the plant operations and maintenance for the full 20-year term.
+- **Pioneers in VNM Adoption in Maharashtra:** Koku Solar stands at the forefront of the state's renewable transition, having already successfully filed 9 applications for prominent housing societies like Royce, Brookhill, and Harmony Sky Suites via the official MSEDCL portal.
+- **Legal Backing & Timely Approvals:** We actively advocate for our clients, having secured a landmark ruling from MERC (Case No. 222 of 2024). This directive penalizes administrative inertia and mandates that MSEDCL must expedite VNM processing, ensuring your transition to solar is imminent.
+
+## How Your Housing Society Can Apply
+
+Getting started requires zero technical heavy-lifting from your society committee:
+
+1. **Appoint a Lead Applicant:** Designate one society member or committee representative.
+2. **Circulate the Consent Form:** Share the online VNM consent link in your society WhatsApp group.
+3. **Submit Electricity Bills:** Interested flat owners submit a copy of their latest electricity bill.
+4. **Filing & Approval:** Koku Solar files the official VNM application with MSEDCL, follows up for regulatory approval, builds the plant, and links the credits directly to your monthly bill.
+
+Don't let rising utility tariffs drain your monthly budget. Secure your society's spot today!
+      `
+    },
     'smart-meter-evolution-guide-residents-homeowners': {
       id: 8,
       title: "The Smart Meter Evolution: An Independent Expert Guide for Residents & Homeowners",
