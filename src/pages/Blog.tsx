@@ -19,13 +19,13 @@ export default function Blog() {
     },
     {
       id: 8,
-      title: "The Smart Meter Evolution: An Independent Expert Guide for Residents & Homeowners",
+      title: "Why You Should Not Resist Smart Meter Installation",
       slug: "smart-meter-evolution-guide-residents-homeowners",
-      excerpt: "An objective, independent guide to how smart meters help residents cut electricity bills through Time-of-Day tariffs, Virtual Net Metering, and emerging energy technology.",
+      excerpt: "Here's how Smart Meters will help you unlock huge savings in the near future.",
       category: "Regulations",
       author: "Koku Solar Team",
-      date: "August 7, 2026",
-      readTime: "7 min read",
+      date: "August 16, 2026",
+      readTime: "6 min read",
       image: "https://images.pexels.com/photos/1001435/pexels-photo-1001435.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
