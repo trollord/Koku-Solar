@@ -212,8 +212,6 @@ Don't let rising utility tariffs drain your monthly budget. Secure your society'
       readTime: "6 min read",
       image: "https://images.pexels.com/photos/1001435/pexels-photo-1001435.jpeg?auto=compress&cs=tinysrgb&w=800",
       content: `
-Here's how Smart Meters will help you unlock huge savings in the near future
-
 <div style="display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0;">
 <img src="/smart-meter-device.webp" alt="PowerFlow smart meter installed on a wall" width="1200" height="655" style="flex:1 1 300px;min-width:0;width:100%;height:auto;border-radius:12px;" />
 <img src="/smart-meter-app.webp" alt="Smartphone app showing Time of Day savings" width="1200" height="655" style="flex:1 1 300px;min-width:0;width:100%;height:auto;border-radius:12px;" />
