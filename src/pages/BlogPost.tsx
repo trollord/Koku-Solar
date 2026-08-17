@@ -203,9 +203,9 @@ Don't let rising utility tariffs drain your monthly budget. Secure your society'
     },
     'smart-meter-evolution-guide-residents-homeowners': {
       id: 8,
-      title: "Here's how Smart Meters will help you unlock huge savings in the near future.",
+      title: "Why you should not resist Smart Meter installation.",
       slug: "smart-meter-evolution-guide-residents-homeowners",
-      excerpt: "Why you should not resist Smart Meter installation.",
+      excerpt: "",
       category: "Regulations",
       author: "Koku Solar Team",
       date: "August 16, 2026",
@@ -487,7 +487,7 @@ Protect the structural integrity of your building with engineering that puts saf
           </div>
 
           <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-gray-600 mb-8 font-medium">{post.excerpt}</p>
+            {post.excerpt && <p className="text-xl text-gray-600 mb-8 font-medium">{post.excerpt}</p>}
             <div
               className="blog-content text-gray-700 leading-relaxed"
               style={{

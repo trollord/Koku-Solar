@@ -19,9 +19,9 @@ export default function Blog() {
     },
     {
       id: 8,
-      title: "Here's how Smart Meters will help you unlock huge savings in the near future.",
+      title: "Why you should not resist Smart Meter installation.",
       slug: "smart-meter-evolution-guide-residents-homeowners",
-      excerpt: "Why you should not resist Smart Meter installation.",
+      excerpt: "Here's how Smart Meters will help you unlock huge savings in the near future.",
       category: "Regulations",
       author: "Koku Solar Team",
       date: "August 16, 2026",
