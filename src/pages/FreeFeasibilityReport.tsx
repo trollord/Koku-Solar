@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { CheckCircle, Star, MessageCircle } from 'lucide-react';
+import { CheckCircle, Star } from 'lucide-react';
 import ZohoLeadForm from '../components/ZohoLeadForm';
 
 const benefits = [
@@ -46,18 +46,6 @@ export default function FreeFeasibilityReport() {
                 <span className="font-semibold text-koku-dark">4.9</span>
                 <span className="text-gray-400">|</span>
                 <span className="font-medium text-gray-700">1,400+ kWp Installed Since 2017</span>
-              </div>
-
-              <div className="mt-6">
-                <a
-                  href="https://wa.me/919082566478?text=Hi%20Koku%20Solar%2C%20I%20want%20a%20free%20solar%20feasibility%20check%20for%20my%20roof."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#25D366] text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-[#1DA851] transition-colors"
-                >
-                  <MessageCircle className="h-5 w-5" />
-                  Chat with us on WhatsApp
-                </a>
               </div>
             </div>
 
