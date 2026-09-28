@@ -403,6 +403,64 @@ Protect the structural integrity of your building with engineering that puts saf
 [Request a Solar Assessment](/contact) | [Get Detailed Quote](/quote)
       `
     },
+    'industrial-consumer-solar-cost-2026': {
+      id: 10,
+      title: "Your Rooftop Solar Installation Could Cost 30% More After 31/12/2026 If You Are an Industrial Consumer",
+      slug: "industrial-consumer-solar-cost-2026",
+      excerpt: "India's solar regulations are moving rapidly toward domestic supply chain independence. For commercial facilities and industrial plants, the government has restricted the use of Non-DCR Panels after 31st December, 2026. Here's what this means for your project economics.",
+      category: "Industrial",
+      author: "Koku Solar Team",
+      date: "September 28, 2026",
+      readTime: "8 min read",
+      image: "https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg?auto=compress&cs=tinysrgb&w=800",
+      content: `
+If you are looking to harness solar energy for your residential building, this policy does not affect you, but for commercial facilities and industrial plants, the government has restricted the use of **Non-DCR Panels after 31st December, 2026**. Let's understand what this means.
+
+## DCR vs Non-DCR Panels: What's the Difference?
+
+- **DCR (Domestic Content Requirement, ALMM 2) Modules:** Both the solar cell and the solar module must be manufactured in India. These modules were previously mandatory for government-subsidized schemes (such as residential PM Surya Ghar) and government-backed utility tenders.
+- **Non-DCR Modules:** Modules that are assembled using imported solar cells (or fully imported modules listed under ALMM 1). These currently dominate the private commercial, industrial (C&I), and unsubsidized rooftop market due to high conversion efficiencies and lower Rupee/Wp procurement costs.
+
+## Direct Comparison: DCR vs Non-DCR
+
+<div style="overflow-x:auto;">
+<table>
+<thead>
+<tr><th>Parameter</th><th>Non-DCR Modules (Imported Cells)</th><th>DCR Modules (Domestic Cells & Modules)</th></tr>
+</thead>
+<tbody>
+<tr><td>Cell</td><td>Imported</td><td>Manufactured in India</td></tr>
+<tr><td>Module Assembly</td><td>Domestic or Approved ALMM Importers</td><td>100% Assembled in India</td></tr>
+<tr><td>Current Hardware Cost</td><td>Baseline (Optimal ₹/Wp economics)</td><td><strong>~75% to 95% premium</strong> due to limited domestic cell supply and higher costs of manufacturing in India</td></tr>
+<tr><td>Module Technology</td><td>Latest High-Efficiency n-Type TOPCon & HJT</td><td>Rapidly scaling TOPCon & Mono-PERC</td></tr>
+<tr><td>Mandatory Use-Case Up To 31/12/2026</td><td>Private C&I and unsubsidized private captive arrays</td><td>Subsidized residential schemes & Central/State PSU tenders</td></tr>
+<tr><td>Average Payback Period</td><td><strong>3.0 – 3.4 Years</strong> (Under current commercial grid tariffs)</td><td><strong>3.8 – 5 Years</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+## Critical Update: India's Dec 31st Regulatory Cutoff
+
+Ministry of New and Renewable Energy (MNRE) guidelines state that the **exemption window for Net-Metering and Open Access projects using non-DCR cells expires on December 31st**. Post this deadline, all new Commercial & Industrial rooftop installations must source modules built with **100% domestically manufactured cells**.
+
+Switching to DCR panels will increase your total installation cost by a noticeable percentage because Indian-made solar cells cost more to produce. This extra upfront cost means it will take longer for your rooftop system to pay for itself through power bill savings, which is why **setting up your project before the mandate takes effect saves you the most money**.
+
+## The Roadmap for You to Transition to Solar
+
+Time is running short, and there is a small window that allows you to save money and decrease the time taken by your solar system to pay for itself. You can only leverage it if you act fast and follow the steps given below.
+
+1. **Step 1: Technical Feasibility (Immediate):** Analyze recent electricity bills, do a shadow analysis, and prepare the electrical Single Line Diagram.
+2. **Step 2: DISCOM Application & Transformer Headroom (Within 14 Days):** File for grid connectivity to lock in local Distribution Transformer (DT) capacity headroom before regional quotas fill up.
+3. **Step 3: Procurement Lock-in (Within 30 Days):** Secure Tier-1 module dispatch under current non-DCR allocations to freeze project CapEx costs.
+4. **Step 4: Installation & Commissioning (Within 60–90 Days):** Complete civil mounting and electrical integration, obtaining CEIG inspection clearance and net-meter installation before the regulatory cutoff.
+
+---
+
+**Don't let the regulatory deadline cost your business lakhs in additional CapEx. Contact Koku Solar today to lock in optimal project economics!**
+
+[Request a Solar Assessment](/contact) | [Get Detailed Quote](/quote)
+      `
+    },
   };
 
   useEffect(() => {

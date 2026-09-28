@@ -7,6 +7,17 @@ export default function Blog() {
 
   const blogPosts = [
     {
+      id: 10,
+      title: "Your Rooftop Solar Installation Could Cost 30% More After 31/12/2026 If You Are an Industrial Consumer",
+      slug: "industrial-consumer-solar-cost-2026",
+      excerpt: "India's solar regulations are moving rapidly toward domestic supply chain independence. For commercial facilities and industrial plants, the government has restricted the use of Non-DCR Panels after 31st December, 2026. Here's what this means for your project economics.",
+      category: "Industrial",
+      author: "Koku Solar Team",
+      date: "September 28, 2026",
+      readTime: "8 min read",
+      image: "https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
       id: 9,
       title: "Understanding Virtual Net Metering (VNM)",
       slug: "understanding-virtual-net-metering-vnm",
@@ -52,7 +63,7 @@ export default function Blog() {
     },
   ];
 
-  const categories = ['All', 'CHSL', 'Regulations'];
+  const categories = ['All', 'CHSL', 'Regulations', 'Industrial'];
 
   const getFilteredPosts = () => {
     if (activeCategory === 'All') {
