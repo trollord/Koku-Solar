@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MapPin, Zap, CheckCircle, Clock, FileText, Filter } from 'lucide-react';
+import { MapPin, Zap, CheckCircle, Clock, FileText, Network } from 'lucide-react';
 import { useCountUp } from '../hooks/useCountUp';
 
 export default function Projects() {
@@ -94,7 +94,7 @@ export default function Projects() {
       case 'Orders in Hand':
         return <FileText className="h-5 w-5 text-blue-600" />;
       case 'Project Consultant':
-        return <Filter className="h-5 w-5 text-purple-600" />;
+        return <Network className="h-5 w-5 text-purple-600" />;
       default:
         return <Zap className="h-5 w-5 text-gray-500" />;
     }
@@ -288,7 +288,7 @@ export default function Projects() {
               {/* Project Consultant */}
               <div className="mb-16">
                 <div className="flex items-center mb-8">
-                  <Filter className="h-8 w-8 text-purple-600 mr-3" />
+                  <Network className="h-8 w-8 text-purple-600 mr-3" />
                   <h2 className="text-3xl font-bold text-koku-dark">Project Consultant</h2>
                   <span className="ml-4 px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold">
                     {consultantProjects.length} Project

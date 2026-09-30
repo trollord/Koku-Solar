@@ -93,8 +93,8 @@ export default function Blog() {
                 key={category}
                 onClick={() => setActiveCategory(category)}
                 className={`px-6 py-2 rounded-full font-medium transition-all ${activeCategory === category
-                    ? 'bg-gradient-to-r from-koku-orange to-yellow-500 text-koku-dark shadow-lg'
-                    : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-koku-orange'
+                  ? 'bg-gradient-to-r from-koku-orange to-yellow-500 text-koku-dark shadow-lg'
+                  : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-koku-orange'
                   }`}
               >
                 {category}
