@@ -40,6 +40,7 @@ export default function Projects() {
     { client: 'Casa Sereno', location: 'Surai, Thane', type: 'Residential', capacity: '360 kWp', status: 'Under Execution' },
     { client: 'Unnati Woods F1', location: 'Kavesar, Thane', type: 'Residential', capacity: '49.8 kWp', status: 'Under Execution' },
     { client: 'Runwal Garden City Marigold', location: 'Balkum, Thane', type: 'Residential', capacity: '33.6 kWp', status: 'Under Execution' },
+    { client: 'Pai Veterinary Products', location: 'Ambernath', type: 'Industrial', capacity: '194 kWp', status: 'Under Execution' },
   ];
 
   const ordersInHandProjects = [
