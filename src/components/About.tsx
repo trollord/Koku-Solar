@@ -68,10 +68,10 @@ export default function About() {
         <div className="absolute inset-0" style={{ backgroundColor: '#FF8C00', opacity: 0.8 }}></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{ color: '#2D2D2D' }}>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight text-slate-900">
             About Koku Solar
           </h1>
-          <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed" style={{ color: '#2D2D2D' }}>
+          <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed text-slate-700">
             Leading solar EPC company delivering safe, compliant, and high-performance solar installations across Maharashtra
           </p>
         </div>
@@ -82,19 +82,19 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-8" style={{ color: '#2D2D2D' }}>
+              <h2 className="text-4xl font-bold mb-8 tracking-tight text-slate-900">
                 Company Overview
               </h2>
-              <p className="text-lg leading-relaxed mb-6" style={{ color: '#2D2D2D' }}>
+              <p className="text-lg leading-relaxed mb-6 text-slate-600">
                 We are a Thane-based Solar EPC company delivering safe, compliant, and high-performance solar plants for CHSLs, commercial facilities, and industrial clients. With over 50 successful installations across Maharashtra, we have established ourselves as a trusted partner in India's solar energy transition.
               </p>
-              <p className="text-lg leading-relaxed mb-6" style={{ color: '#2D2D2D' }}>
+              <p className="text-lg leading-relaxed mb-6 text-slate-600">
                 Our comprehensive approach covers everything from initial feasibility studies to long-term maintenance, ensuring our clients achieve maximum returns on their solar investments while contributing to a sustainable future.
               </p>
-              <p className="text-lg leading-relaxed mb-6" style={{ color: '#2D2D2D' }}>
+              <p className="text-lg leading-relaxed mb-6 text-slate-600">
                 We are officially empaneled under the <strong>PM Surya Ghar Muft Bijli Yojana</strong> and are a registered MSEDCL vendor (Installer Category). We maintain the highest standards of technical execution and regulatory compliance.
               </p>
-              <p className="text-lg leading-relaxed" style={{ color: '#2D2D2D' }}>
+              <p className="text-lg leading-relaxed text-slate-600">
                 Beyond execution, we are <strong>VNM Pioneers</strong>, actively leading regulatory advocacy and challenging MSEDCL to enforce Virtual Net Metering (VNM) for housing societies across Maharashtra.
               </p>
             </div>
@@ -102,7 +102,7 @@ export default function About() {
               <img
                 src="https://images.pexels.com/photos/8853502/pexels-photo-8853502.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Solar installation team"
-                className="w-full h-96 object-cover rounded-2xl shadow-2xl"
+                className="w-full h-96 object-cover rounded-2xl shadow-xl ring-1 ring-slate-900/5"
               />
               <div className="absolute inset-0 rounded-2xl" style={{ background: 'linear-gradient(45deg, rgba(255, 140, 0, 0.2), rgba(255, 127, 0, 0.2))' }}></div>
             </div>
@@ -114,22 +114,22 @@ export default function About() {
       <section className="py-24" style={{ backgroundColor: '#FFF7EB' }}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4" style={{ borderColor: '#FF8C00' }}>
+            <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-t border-r border-b border-slate-100 hover:-translate-y-1 transition-all duration-300 hover:shadow-xl" style={{ borderLeftColor: '#FF8C00' }}>
               <div className="w-16 h-16 rounded-lg mb-6 flex items-center justify-center" style={{ backgroundColor: '#FF8C00' }}>
-                <Target className="w-8 h-8" style={{ color: '#2D2D2D' }} />
+                <Target className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4" style={{ color: '#2D2D2D' }}>Our Mission</h3>
-              <p className="text-lg leading-relaxed" style={{ color: '#2D2D2D' }}>
+              <h3 className="text-2xl font-bold mb-4 tracking-tight text-slate-900">Our Mission</h3>
+              <p className="text-lg leading-relaxed text-slate-600">
                 To accelerate India's transition to clean and economical solar energy through safe, high-quality EPC execution that delivers measurable value to our clients and communities.
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4" style={{ borderColor: '#FF7F00' }}>
+            <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-t border-r border-b border-slate-100 hover:-translate-y-1 transition-all duration-300 hover:shadow-xl" style={{ borderLeftColor: '#FF7F00' }}>
               <div className="w-16 h-16 rounded-lg mb-6 flex items-center justify-center" style={{ backgroundColor: '#FF7F00' }}>
-                <Eye className="w-8 h-8" style={{ color: '#2D2D2D' }} />
+                <Eye className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4" style={{ color: '#2D2D2D' }}>Our Vision</h3>
-              <p className="text-lg leading-relaxed" style={{ color: '#2D2D2D' }}>
+              <h3 className="text-2xl font-bold mb-4 tracking-tight text-slate-900">Our Vision</h3>
+              <p className="text-lg leading-relaxed text-slate-600">
                 Affordable, sustainable, and smart energy for every community and business, making solar the preferred choice for energy independence across India.
               </p>
             </div>
@@ -141,11 +141,11 @@ export default function About() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: '#2D2D2D' }}>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-slate-900">
               Core Strengths
             </h2>
             <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#FF8C00' }}></div>
-            <p className="text-xl max-w-3xl mx-auto" style={{ color: '#2D2D2D' }}>
+            <p className="text-xl max-w-3xl mx-auto text-slate-600">
               Built on engineering excellence, regulatory compliance, and transparent execution.
             </p>
           </div>
@@ -153,13 +153,13 @@ export default function About() {
             {strengths.map((strength, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-orange-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all border border-orange-100 text-center"
+                className="bg-gradient-to-br from-orange-50 to-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 hover:border-orange-200 text-center hover:-translate-y-1 group"
               >
-                <div className="bg-gradient-to-br from-koku-orange to-yellow-500 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                <div className="bg-gradient-to-br from-koku-orange to-yellow-500 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
                   <strength.icon className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{strength.title}</h3>
-                <p className="text-gray-600">{strength.description}</p>
+                <h3 className="text-xl font-bold text-slate-900 tracking-tight mb-3">{strength.title}</h3>
+                <p className="text-slate-600 leading-relaxed">{strength.description}</p>
               </div>
             ))}
           </div>
@@ -170,24 +170,24 @@ export default function About() {
       <section className="py-24" style={{ backgroundColor: '#FFF7EB' }}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: '#2D2D2D' }}>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-slate-900">
               Leadership Team
             </h2>
             <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#FF8C00' }}></div>
-            <p className="text-xl max-w-3xl mx-auto" style={{ color: '#2D2D2D' }}>
+            <p className="text-xl max-w-3xl mx-auto text-slate-600">
               Experienced professionals driving innovation and excellence in solar energy solutions.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {leadership.map((leader, index) => (
-              <div key={index} className="bg-white rounded-2xl p-8 shadow-lg text-center">
-                <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ backgroundColor: '#FF8C00' }}>
-                  <Users className="w-12 h-12" style={{ color: '#2D2D2D' }} />
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg border border-slate-100 transition-all duration-300 hover:-translate-y-1 text-center group">
+                <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-105 transition-transform duration-300" style={{ backgroundColor: '#FF8C00' }}>
+                  <Users className="w-12 h-12 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-2" style={{ color: '#2D2D2D' }}>{leader.name}</h3>
+                <h3 className="text-xl font-bold mb-2 tracking-tight text-slate-900">{leader.name}</h3>
                 <p className="font-semibold mb-3" style={{ color: '#FF8C00' }}>{leader.position}</p>
-                <p className="text-sm mb-2" style={{ color: '#2D2D2D' }}>{leader.experience}</p>
+                <p className="text-sm mb-2 text-slate-600">{leader.experience}</p>
               </div>
             ))}
           </div>

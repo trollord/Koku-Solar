@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 lg:py-32">
           <div className="max-w-4xl">
             {/* Main Headlines */}
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-koku-dark">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-6 text-koku-dark">
               Earn While the
               <br />
               <span className="text-white">Sun Shines</span>
@@ -26,13 +26,13 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 mb-16">
               <Link
                 to="/contact#contact"
-                className="px-8 py-4 font-bold rounded-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 bg-koku-dark text-white hover:bg-white hover:text-koku-dark"
+                className="px-8 py-4 font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transform hover:-translate-y-0.5 bg-koku-dark text-white hover:bg-white hover:text-koku-dark"
               >
                 Get a Free Assessment
               </Link>
               <Link
                 to="/projects"
-                className="px-8 py-4 font-bold rounded-lg transition-all backdrop-blur-sm border-2 bg-transparent text-koku-dark border-koku-dark hover:bg-koku-dark hover:text-white text-center"
+                className="px-8 py-4 font-bold rounded-lg transition-all duration-300 backdrop-blur-sm border-2 bg-transparent text-koku-dark border-koku-dark hover:border-koku-dark/80 hover:bg-koku-dark hover:text-white text-center hover:-translate-y-0.5"
               >
                 View Our Projects
               </Link>
@@ -40,26 +40,26 @@ export default function Hero() {
 
             {/* Trust Badges */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="rounded-lg p-6 flex items-center gap-4 bg-koku-dark bg-opacity-80">
+              <div className="rounded-lg p-6 flex items-center gap-4 bg-koku-dark/80 backdrop-blur-md border border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group">
                 <Shield className="w-10 h-10 flex-shrink-0 text-white" />
                 <div>
-                  <div className="text-lg font-bold text-white">Compliance Builds</div>
+                  <div className="text-lg font-bold text-white tracking-tight">Compliance Builds</div>
                   <div className="text-sm text-koku-orange-light">Zero-compromise engineering</div>
                 </div>
               </div>
 
-              <div className="rounded-lg p-6 flex items-center gap-4 bg-koku-dark bg-opacity-80">
+              <div className="rounded-lg p-6 flex items-center gap-4 bg-koku-dark/80 backdrop-blur-md border border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group">
                 <Award className="w-10 h-10 flex-shrink-0 text-white" />
                 <div>
-                  <div className="text-lg font-bold text-white">Approved Vendor</div>
+                  <div className="text-lg font-bold text-white tracking-tight">Approved Vendor</div>
                   <div className="text-sm text-koku-orange-light">MSEDCL & PM Surya Ghar</div>
                 </div>
               </div>
 
-              <div className="rounded-lg p-6 flex items-center gap-4 bg-koku-dark bg-opacity-80">
+              <div className="rounded-lg p-6 flex items-center gap-4 bg-koku-dark/80 backdrop-blur-md border border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group">
                 <Network className="w-10 h-10 flex-shrink-0 text-white" />
                 <div>
-                  <div className="text-lg font-bold text-white">VNM Pioneers</div>
+                  <div className="text-lg font-bold text-white tracking-tight">VNM Pioneers</div>
                   <div className="text-sm text-koku-orange-light">For Housing Societies</div>
                 </div>
               </div>

@@ -135,26 +135,26 @@ export default function Projects() {
   };
 
   const ProjectCard = ({ project }: { project: any }) => (
-    <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-all duration-300">
+    <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 p-6 transition-all duration-300 hover:-translate-y-1.5">
       <div className="flex items-start justify-between mb-4">
         <div className="flex-1">
-          <h3 className="text-lg font-bold text-koku-dark mb-2">{project.client}</h3>
-          <div className="flex items-center text-gray-600 mb-2">
-            <MapPin className="h-4 w-4 mr-2 text-koku-orange" />
+          <h3 className="text-lg font-bold text-slate-900 tracking-tight mb-2">{project.client}</h3>
+          <div className="flex items-center text-slate-600 mb-2">
+            <MapPin className="h-4 w-4 mr-2 text-koku-orange group-hover:scale-110 transition-transform duration-300" />
             <span className="text-sm">{project.location}</span>
           </div>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center group-hover:scale-110 transition-transform duration-300">
           {getStatusIcon(project.status)}
         </div>
       </div>
 
-      <div className="flex items-center justify-between mb-4">
-        <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getTypeColor(project.type)}`}>
+      <div className="flex items-center justify-between mb-4 pb-4 border-b border-slate-50">
+        <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getTypeColor(project.type)} shadow-sm`}>
           {project.type}
         </span>
-        <div className="flex items-center text-koku-dark font-semibold">
-          <Zap className="h-4 w-4 mr-1 text-koku-orange" />
+        <div className="flex items-center text-slate-900 font-semibold">
+          <Zap className="h-4 w-4 mr-1 text-koku-orange group-hover:scale-110 transition-transform duration-300" />
           <span>{project.capacity}</span>
         </div>
       </div>
@@ -176,7 +176,7 @@ export default function Projects() {
       <section className="py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-6xl font-bold text-koku-dark mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
               Our <span className="bg-gradient-to-r from-koku-orange to-yellow-500 bg-clip-text text-transparent">Projects</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -224,9 +224,9 @@ export default function Projects() {
               <button
                 key={filterType}
                 onClick={() => setFilter(filterType)}
-                className={`px-6 py-2 rounded-full font-medium transition-all ${filter === filterType
-                  ? 'bg-gradient-to-r from-koku-orange to-yellow-500 text-koku-dark shadow-lg'
-                  : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-koku-orange'
+                className={`px-6 py-2 rounded-full font-medium transition-all duration-300 hover:-translate-y-0.5 ${filter === filterType
+                  ? 'bg-gradient-to-r from-koku-orange to-yellow-500 text-slate-900 shadow-md'
+                  : 'bg-white text-slate-600 border border-slate-200 hover:border-koku-orange hover:shadow-sm'
                   }`}
               >
                 {filterType === 'all' ? 'All Projects' :
@@ -248,7 +248,7 @@ export default function Projects() {
               <div className="mb-16">
                 <div className="flex items-center mb-8">
                   <CheckCircle className="h-8 w-8 text-green-600 mr-3" />
-                  <h2 className="text-3xl font-bold text-koku-dark">Completed Projects</h2>
+                  <h2 className="text-3xl font-bold tracking-tight text-slate-900">Completed Projects</h2>
                   <span className="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-semibold">
                     {completedProjects.length} Projects
                   </span>
@@ -264,7 +264,7 @@ export default function Projects() {
               <div className="mb-16">
                 <div className="flex items-center mb-8">
                   <Clock className="h-8 w-8 text-orange-500 mr-3" />
-                  <h2 className="text-3xl font-bold text-koku-dark">Projects Under Execution</h2>
+                  <h2 className="text-3xl font-bold tracking-tight text-slate-900">Projects Under Execution</h2>
                   <span className="ml-4 px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-semibold">
                     {underExecutionProjects.length} Projects
                   </span>
@@ -280,7 +280,7 @@ export default function Projects() {
               <div className="mb-16">
                 <div className="flex items-center mb-8">
                   <FileText className="h-8 w-8 text-blue-600 mr-3" />
-                  <h2 className="text-3xl font-bold text-koku-dark">Orders in Hand (Virtual Net Metering)</h2>
+                  <h2 className="text-3xl font-bold tracking-tight text-slate-900">Orders in Hand (Virtual Net Metering)</h2>
                   <span className="ml-4 px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">
                     {ordersInHandProjects.length} Projects
                   </span>
@@ -296,7 +296,7 @@ export default function Projects() {
               <div className="mb-16">
                 <div className="flex items-center mb-8">
                   <Network className="h-8 w-8 text-purple-600 mr-3" />
-                  <h2 className="text-3xl font-bold text-koku-dark">Project Consultant</h2>
+                  <h2 className="text-3xl font-bold tracking-tight text-slate-900">Project Consultant</h2>
                   <span className="ml-4 px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold">
                     {consultantProjects.length} Project
                   </span>
