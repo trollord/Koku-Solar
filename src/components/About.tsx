@@ -39,13 +39,13 @@ export default function About() {
       name: 'Chinmay Divekar',
       position: 'CEO',
       experience: '9+ years in Solar EPC',
-      
+
     },
     {
-      name: 'Pratiksha gadmule',
+      name: 'Pratiksha Gadmule',
       position: 'Engineering',
       experience: '5+ years in Power Systems',
-     
+
     },
     {
       name: 'Ashok Nair',
@@ -60,7 +60,7 @@ export default function About() {
       <section className="relative py-24 bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/9875415/pexels-photo-9875415.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20"></div>
         <div className="absolute inset-0" style={{ backgroundColor: '#FF8C00', opacity: 0.8 }}></div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{ color: '#2D2D2D' }}>
             About Koku Solar

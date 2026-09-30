@@ -29,20 +29,23 @@ export default function Projects() {
     { client: 'Platinum Lawns CHSL', location: 'Kasarwadavli, Thane', type: 'Residential', capacity: '60 kWp', status: 'Completed' },
     { client: 'Vijay Residency CHSL', location: 'Near Hiranandani Estate, Thane', type: 'Residential', capacity: '31 kWp', status: 'Completed' },
     { client: 'Runwal Garden City Aster CHSL', location: 'Balkum, Thane', type: 'Residential', capacity: '29 kWp', status: 'Completed' },
+    { client: 'Regency Towers CHSL', location: 'Anandnagar, Thane', type: 'Residential', capacity: '221 kWp', status: 'Completed' },
+    { client: 'Kalpataru Aura 1EFG CHSL', location: 'Ghatkopar', type: 'Residential', capacity: '100 kWp', status: 'Completed' },
+    { client: 'Chestnut CHSL', location: 'Thane', type: 'Residential', capacity: '43.8 kWp', status: 'Completed' },
+    { client: 'Runwal Garden City Iris CHSL', location: 'Balkum, Thane', type: 'Residential', capacity: '37 kWp', status: 'Completed' },
+    { client: 'Sonal Laxmi CHSL', location: 'Thane', type: 'Residential', capacity: '19 kWp', status: 'Completed' },
   ];
 
   const underExecutionProjects = [
-    { client: 'Regency Towers CHSL', location: 'Anandnagar, Thane', type: 'Residential', capacity: '221 kWp', status: 'Under Execution' },
-    { client: 'Kalpataru Aura 1EFG CHSL', location: 'Ghatkopar', type: 'Residential', capacity: '100 kWp', status: 'Under Execution' },
-    { client: 'Chestnut CHSL', location: 'Thane', type: 'Residential', capacity: '43.8 kWp', status: 'Under Execution' },
-    { client: 'Runwal Garden City Iris CHSL', location: 'Balkum, Thane', type: 'Residential', capacity: '37 kWp', status: 'Under Execution' },
-    { client: 'Sonal Laxmi CHSL', location: 'Thane', type: 'Residential', capacity: '19 kWp', status: 'Under Execution' },
+    { client: 'Casa Sereno', location: 'Surai, Thane', type: 'Residential', capacity: '360 kWp', status: 'Under Execution' },
+    { client: 'Unnati Woods F1', location: 'Kavesar, Thane', type: 'Residential', capacity: '49.8 kWp', status: 'Under Execution' },
+    { client: 'Runwal Garden City Marigold', location: 'Balkum, Thane', type: 'Residential', capacity: '33.6 kWp', status: 'Under Execution' },
   ];
 
   const ordersInHandProjects = [
     { client: 'Royce CHSL', location: 'Hiranandani Estate, Thane', type: 'VNM', capacity: '100 kWp', status: 'Orders in Hand' },
     { client: 'Brookhill CHSL', location: 'Hiranandani Estate, Thane', type: 'VNM', capacity: '320 kWp', status: 'Orders in Hand' },
-    { client: 'Trebecca CHSL', location: 'Hiranandani Estate, Thane', type: 'VNM', capacity: '285 kWp', status: 'Orders in Hand' },
+    { client: 'Tribeca CHSL', location: 'Hiranandani Estate, Thane', type: 'VNM', capacity: '285 kWp', status: 'Orders in Hand' },
     { client: 'Harmony CHSL', location: 'Hiranandani Estate, Thane', type: 'VNM', capacity: '100 kWp', status: 'Orders in Hand' },
     { client: 'Ivy Courtyard CHSL', location: 'Pokhran Road, Thane', type: 'VNM', capacity: '100 kWp', status: 'Orders in Hand' },
     { client: 'Silver Oak CHSL', location: 'Ghodbunder Road, Thane', type: 'VNM', capacity: '100 kWp', status: 'Orders in Hand' },
@@ -59,7 +62,7 @@ export default function Projects() {
 
   const getFilteredProjects = () => {
     if (filter === 'all') return allProjects;
-    return allProjects.filter(project => 
+    return allProjects.filter(project =>
       project.type.toLowerCase().replace(' ', '-') === filter ||
       (filter === 'vnm' && project.type === 'VNM') ||
       (filter === 'green-open-access' && project.type === 'Green Open Access')
@@ -214,16 +217,15 @@ export default function Projects() {
               <button
                 key={filterType}
                 onClick={() => setFilter(filterType)}
-                className={`px-6 py-2 rounded-full font-medium transition-all ${
-                  filter === filterType
-                    ? 'bg-gradient-to-r from-koku-orange to-yellow-500 text-koku-dark shadow-lg'
-                    : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-koku-orange'
-                }`}
+                className={`px-6 py-2 rounded-full font-medium transition-all ${filter === filterType
+                  ? 'bg-gradient-to-r from-koku-orange to-yellow-500 text-koku-dark shadow-lg'
+                  : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-koku-orange'
+                  }`}
               >
-                {filterType === 'all' ? 'All Projects' : 
-                 filterType === 'vnm' ? 'VNM' :
-                 filterType === 'green-open-access' ? 'Green Open Access' :
-                 filterType.charAt(0).toUpperCase() + filterType.slice(1)}
+                {filterType === 'all' ? 'All Projects' :
+                  filterType === 'vnm' ? 'VNM' :
+                    filterType === 'green-open-access' ? 'Green Open Access' :
+                      filterType.charAt(0).toUpperCase() + filterType.slice(1)}
               </button>
             ))}
           </div>
