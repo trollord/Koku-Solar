@@ -40,3 +40,7 @@ Disallow: /
 
 # 6. Direct AI Bots to Your Sitemap for Faster Indexing
 Sitemap: https://kokusolar.com/sitemap.xml
+
+# 7. LLMs.txt for AI discoverability
+# See https://llmstxt.org/
+# Provides structured context about this site for AI search systems

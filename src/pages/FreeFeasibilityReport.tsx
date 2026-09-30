@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { CheckCircle, Star } from 'lucide-react';
 import ZohoLeadForm from '../components/ZohoLeadForm';
+import SEO from '../components/SEO';
 
 const benefits = [
   'Custom Rooftop Solar Generation Estimate (in kWp)',
@@ -15,6 +16,11 @@ export default function FreeFeasibilityReport() {
 
   return (
     <div className="bg-white pt-16">
+      <SEO
+        title="Free Solar Feasibility Report"
+        description="Get a free rooftop solar feasibility report for your housing society, commercial building, or industrial plant in Maharashtra. Includes generation estimate, subsidy calculation, and ROI projection."
+        canonical="/free-feasibility-report"
+      />
       <section className="py-10 lg:py-0 lg:min-h-[calc(100vh-4rem)] lg:flex lg:items-center bg-gradient-to-br from-orange-50 via-white to-yellow-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">

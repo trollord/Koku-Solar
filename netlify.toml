@@ -2,8 +2,40 @@
   command = "npm run build"
   publish = "dist"
 
+# Enable Netlify Prerendering for search engine and AI crawlers
+# This serves pre-rendered static HTML to bots while users get the SPA
+[build.processing]
+  [build.processing.html]
+    pretty_urls = true
+
 # SPA fallback: let React Router handle client-side routes
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Headers for SEO and performance
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/llms.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

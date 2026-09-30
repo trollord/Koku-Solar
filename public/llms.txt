@@ -1,0 +1,33 @@
+# Koku Solar
+
+> Engineering-led Solar EPC company based in Thane, Maharashtra, India. MSEDCL Registered Vendor (Installer Category). Specializing in CHSL (housing society), commercial, industrial solar plants, and Virtual Net Metering (VNM) across Maharashtra.
+
+## Company Overview
+
+- **Founded:** 22 April 2024
+- **Location:** Thane, Maharashtra, India
+- **Website:** https://kokusolar.com
+- **Services:** Solar EPC (design, engineering, procurement, construction), AMC & cleaning, monitoring, capex financing support, Virtual Net Metering
+- **Segments:** CHSL (cooperative housing societies), commercial, industrial
+- **Regulatory:** MSEDCL Registered Vendor — Installer Category
+- **Leadership:** IIT-trained engineers with 15+ years of experience in solar EPC design and execution
+
+## Pages
+
+- [Home](https://kokusolar.com/): Overview of services, testimonials, project gallery, and brand story
+- [About](https://kokusolar.com/about): Company mission, vision, values, strengths, and team background
+- [Services](https://kokusolar.com/services): CHSL Solar EPC, commercial solar EPC, industrial solar EPC, AMC & cleaning, monitoring, capex financing, Virtual Net Metering (VNM)
+- [Projects](https://kokusolar.com/projects): Portfolio of 30+ completed, under-execution, and orders-in-hand projects across Maharashtra totalling 5,000+ kWp
+- [Blog](https://kokusolar.com/blog): Technical articles on solar regulations, VNM, PM Surya Ghar Yojana subsidy, smart meters, rooftop structural safety, and DCR panel economics
+- [Contact](https://kokusolar.com/contact): Request a quote, office location (Thane), phone and email
+- [Free Feasibility Report](https://kokusolar.com/free-feasibility-report): Free rooftop solar generation estimate, subsidy calculation, and ROI projection
+
+## Key Topics Covered
+
+- Virtual Net Metering (VNM) for high-rise apartments in Maharashtra
+- PM Surya Ghar Yojana government subsidy for housing societies
+- Smart meter installation and solar savings
+- DCR vs Non-DCR solar panel regulations and cost impact
+- Rooftop solar mounting structure safety and terrace slab loading
+- MSEDCL net metering process and documentation
+- Solar EPC project execution for CHSL, commercial, and industrial segments

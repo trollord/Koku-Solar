@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { MapPin, Zap, CheckCircle, Clock, FileText, Network } from 'lucide-react';
 import { useCountUp } from '../hooks/useCountUp';
+import SEO from '../components/SEO';
 
 export default function Projects() {
   const [filter, setFilter] = useState('all');
@@ -166,6 +167,11 @@ export default function Projects() {
 
   return (
     <div className="bg-white pt-16">
+      <SEO
+        title="Our Projects"
+        description="Explore Koku Solar's portfolio of 30+ solar projects across Maharashtra — completed, under execution, and orders in hand — totalling over 5,000 kWp of installed capacity."
+        canonical="/projects"
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

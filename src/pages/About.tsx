@@ -1,5 +1,6 @@
 import { Target, Users, Award, TrendingUp, Heart, Leaf, Lightbulb, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 export default function About() {
   const strengths = [
@@ -38,6 +39,11 @@ export default function About() {
 
   return (
     <div className="bg-white pt-16">
+      <SEO
+        title="About Us"
+        description="Learn about Koku Solar — an engineering-led solar EPC company founded in 2024, based in Thane, Maharashtra. MSEDCL Registered Vendor with IIT-trained engineers delivering compliant solar installations."
+        canonical="/about"
+      />
       <section className="py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

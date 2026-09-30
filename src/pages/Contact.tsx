@@ -1,9 +1,15 @@
 import { MapPin, Phone, Mail } from 'lucide-react';
 import ZohoLeadForm from '../components/ZohoLeadForm';
+import SEO from '../components/SEO';
 
 export default function Contact() {
   return (
     <div className="bg-white pt-16">
+      <SEO
+        title="Contact Us"
+        description="Get in touch with Koku Solar for a free solar feasibility assessment. Request a quote for CHSL, commercial, or industrial solar installations in Maharashtra."
+        canonical="/contact"
+      />
       <section className="py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

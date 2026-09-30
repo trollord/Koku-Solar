@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, User, ArrowLeft, Share2, Clock, FileText } from 'lucide-react';
 import ZohoLeadForm from '../components/ZohoLeadForm';
+import SEO from '../components/SEO';
 
 interface BlogPostData {
   id: number;
@@ -496,6 +497,42 @@ Time is running short, and there is a small window that allows you to save money
 
   return (
     <div className="bg-white pt-16">
+      <SEO
+        title={post.title}
+        description={post.excerpt}
+        canonical={`/blog/${post.slug}`}
+        ogImage={post.image}
+        ogType="article"
+        article={{
+          author: post.author,
+          publishedTime: post.date,
+          section: post.category,
+        }}
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: post.title,
+          description: post.excerpt,
+          image: post.image,
+          author: {
+            '@type': 'Organization',
+            name: post.author,
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'Koku Solar',
+            logo: {
+              '@type': 'ImageObject',
+              url: 'https://kokusolar.com/koku.png',
+            },
+          },
+          datePublished: post.date,
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': `https://kokusolar.com/blog/${post.slug}`,
+          },
+        }}
+      />
       <article>
         <div className="relative h-96 bg-gradient-to-br from-koku-dark to-gray-800">
           <img

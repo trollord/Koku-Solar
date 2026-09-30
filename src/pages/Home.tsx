@@ -4,10 +4,15 @@ import ServicesSegmented from '../components/ServicesSegmented';
 import ProcessTimeline from '../components/ProcessTimeline';
 import ProjectGallery from '../components/ProjectGallery';
 import TestimonialSlider from '../components/TestimonialSlider';
+import SEO from '../components/SEO';
 
 export default function Home() {
   return (
     <div className="pt-20">
+      <SEO
+        canonical="/"
+        description="Koku Solar is an engineering-led solar EPC company in Thane, Maharashtra. We deliver CHSL, commercial, and industrial solar installations with compliance-first execution and long-term performance."
+      />
       <Hero />
       
       {/* Brand Story Section */}

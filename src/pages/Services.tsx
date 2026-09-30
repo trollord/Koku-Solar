@@ -1,5 +1,6 @@
 import { Home, Building2, Factory, Wrench, Monitor, DollarSign, Network } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 export default function Services() {
   const services = [
@@ -162,6 +163,11 @@ export default function Services() {
 
   return (
     <div className="bg-white pt-16">
+      <SEO
+        title="Solar EPC Services"
+        description="Comprehensive solar EPC services for housing societies, commercial buildings, and industrial plants in Maharashtra. CHSL solar, commercial solar, industrial solar, AMC, monitoring, and Virtual Net Metering."
+        canonical="/services"
+      />
       <section className="py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

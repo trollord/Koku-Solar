@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Calendar, User, ArrowRight, FileText } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Blog() {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -76,6 +77,11 @@ export default function Blog() {
 
   return (
     <div className="bg-white pt-16">
+      <SEO
+        title="Blog — Solar Insights & Guides"
+        description="Expert articles on solar energy regulations, Virtual Net Metering, PM Surya Ghar Yojana subsidies, smart meters, and rooftop solar best practices for Maharashtra residents and businesses."
+        canonical="/blog"
+      />
       <section className="py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

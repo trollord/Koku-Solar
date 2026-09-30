@@ -50,6 +50,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Koku Solar — Engineering-led Solar EPC in Maharashtra</title>
     <meta name="description" content="Koku Solar is an engineering-led solar EPC company specializing in CHSL, commercial, and industrial solar solutions across Maharashtra." />
+    <link rel="canonical" href="https://kokusolar.com/" />
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN-MH" />
+    <meta name="geo.placename" content="Thane, Maharashtra" />
+    <meta name="geo.position" content="19.2183;72.9781" />
+    <meta name="ICBM" content="19.2183, 72.9781" />
 
     <!-- Open Graph / WhatsApp / Facebook -->
     <meta property="og:type" content="website" />
@@ -76,5 +83,39 @@
     <!-- End Meta (Facebook) Pixel (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- JSON-LD: LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Koku Solar",
+      "description": "Engineering-led solar EPC company specializing in CHSL, commercial, and industrial solar solutions across Maharashtra.",
+      "url": "https://kokusolar.com",
+      "logo": "https://kokusolar.com/koku.png",
+      "image": "https://kokusolar.com/koku.png",
+      "telephone": "+91-9082566478",
+      "email": "info@kokusolar.com",
+      "foundingDate": "2024-04-22",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Thane",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.2183,
+        "longitude": 72.9781
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Maharashtra"
+      },
+      "sameAs": [],
+      "priceRange": "$$",
+      "serviceType": ["Solar EPC", "CHSL Solar Installation", "Commercial Solar", "Industrial Solar", "Virtual Net Metering", "Solar AMC"]
+    }
+    </script>
   </body>
 </html>
