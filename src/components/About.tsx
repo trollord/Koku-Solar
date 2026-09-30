@@ -1,36 +1,37 @@
-import { Award, Users, Clock, CheckCircle2, Target, Eye, Building } from 'lucide-react';
+import { Award, Users, Clock, CheckCircle2, Target, Eye, Building, BadgeCheck, Lightbulb, CheckCircle, Heart, TrendingUp } from 'lucide-react';
+import SEO from './SEO';
 
 export default function About() {
   const strengths = [
     {
-      icon: Building,
-      title: '50+ Installations',
-      description: 'Completed projects across Maharashtra',
+      icon: Lightbulb,
+      title: 'In-house Engineering & Design',
+      description: 'Complete technical capabilities from feasibility to commissioning.',
     },
     {
       icon: Award,
-      title: 'Tier-1 Sourcing',
-      description: 'Premium quality components only',
+      title: 'Professional DISCOM Coordination',
+      description: 'Experienced in Maharashtra regulatory processes and approvals.',
     },
     {
-      icon: Users,
-      title: 'Certified Engineers',
-      description: 'IIT-trained technical team',
+      icon: CheckCircle,
+      title: 'Compliance-First Installation',
+      description: 'All installations follow state guidelines and electrical standards.',
     },
     {
-      icon: Clock,
-      title: 'On-Time Delivery',
-      description: '98% projects delivered on schedule',
+      icon: Heart,
+      title: 'OEM Warranty Support',
+      description: 'Direct support for module, inverter and structure warranties.',
     },
     {
-      icon: CheckCircle2,
-      title: 'Design Excellence',
-      description: 'Advanced engineering capabilities',
+      icon: TrendingUp,
+      title: 'Long-term O&M Capability',
+      description: 'Comprehensive maintenance and monitoring services.',
     },
     {
-      icon: Target,
-      title: 'MNRE Approved',
-      description: 'Government certified vendor',
+      icon: BadgeCheck,
+      title: 'Registered Vendors',
+      description: 'Approved by MSEDCL (Vendor — Installer Category) & PM Surya Ghar Yojana',
     },
   ];
 
@@ -56,6 +57,11 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="About Us"
+        description="Learn about Koku Solar — an engineering-led solar EPC company founded in 2024, based in Thane, Maharashtra. MSEDCL Registered Vendor with IIT-trained engineers delivering compliant solar installations."
+        canonical="/about"
+      />
       {/* Hero Section */}
       <section className="relative py-24 bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/9875415/pexels-photo-9875415.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20"></div>
@@ -79,11 +85,17 @@ export default function About() {
               <h2 className="text-4xl font-bold mb-8" style={{ color: '#2D2D2D' }}>
                 Company Overview
               </h2>
-              <p className="text-lg leading-relaxed mb-8" style={{ color: '#2D2D2D' }}>
+              <p className="text-lg leading-relaxed mb-6" style={{ color: '#2D2D2D' }}>
                 We are a Thane-based Solar EPC company delivering safe, compliant, and high-performance solar plants for CHSLs, commercial facilities, and industrial clients. With over 50 successful installations across Maharashtra, we have established ourselves as a trusted partner in India's solar energy transition.
               </p>
-              <p className="text-lg leading-relaxed" style={{ color: '#2D2D2D' }}>
+              <p className="text-lg leading-relaxed mb-6" style={{ color: '#2D2D2D' }}>
                 Our comprehensive approach covers everything from initial feasibility studies to long-term maintenance, ensuring our clients achieve maximum returns on their solar investments while contributing to a sustainable future.
+              </p>
+              <p className="text-lg leading-relaxed mb-6" style={{ color: '#2D2D2D' }}>
+                We are officially empaneled under the <strong>PM Surya Ghar Muft Bijli Yojana</strong> and are a registered MSEDCL vendor (Installer Category). We maintain the highest standards of technical execution and regulatory compliance.
+              </p>
+              <p className="text-lg leading-relaxed" style={{ color: '#2D2D2D' }}>
+                Beyond execution, we are <strong>VNM Pioneers</strong>, actively leading regulatory advocacy and challenging MSEDCL to enforce Virtual Net Metering (VNM) for housing societies across Maharashtra.
               </p>
             </div>
             <div className="relative">
@@ -126,7 +138,7 @@ export default function About() {
       </section>
 
       {/* Core Strengths */}
-      <section className="py-24">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: '#2D2D2D' }}>
@@ -134,22 +146,20 @@ export default function About() {
             </h2>
             <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#FF8C00' }}></div>
             <p className="text-xl max-w-3xl mx-auto" style={{ color: '#2D2D2D' }}>
-              Built on engineering excellence, quality execution, and unwavering commitment to client success.
+              Built on engineering excellence, regulatory compliance, and transparent execution.
             </p>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {strengths.map((strength, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border hover:border-2"
-                style={{ borderColor: '#FF7F00' }}
+                className="bg-gradient-to-br from-orange-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all border border-orange-100 text-center"
               >
-                <div className="w-16 h-16 rounded-lg mb-6 flex items-center justify-center" style={{ backgroundColor: '#FF8C00' }}>
-                  <strength.icon className="w-8 h-8" style={{ color: '#2D2D2D' }} />
+                <div className="bg-gradient-to-br from-koku-orange to-yellow-500 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                  <strength.icon className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-3" style={{ color: '#2D2D2D' }}>{strength.title}</h3>
-                <p className="leading-relaxed" style={{ color: '#2D2D2D' }}>{strength.description}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{strength.title}</h3>
+                <p className="text-gray-600">{strength.description}</p>
               </div>
             ))}
           </div>

@@ -1,4 +1,4 @@
-import { Award, Shield, Clock } from 'lucide-react';
+import { Award, Shield, Network } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Hero() {
@@ -30,7 +30,7 @@ export default function Hero() {
               >
                 Get a Free Assessment
               </Link>
-              <Link 
+              <Link
                 to="/projects"
                 className="px-8 py-4 font-bold rounded-lg transition-all backdrop-blur-sm border-2 bg-transparent text-koku-dark border-koku-dark hover:bg-koku-dark hover:text-white text-center"
               >
@@ -41,26 +41,26 @@ export default function Hero() {
             {/* Trust Badges */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="rounded-lg p-6 flex items-center gap-4 bg-koku-dark bg-opacity-80">
-                <Award className="w-10 h-10 flex-shrink-0 text-white" />
-                <div>
-                  <div className="text-lg font-bold text-white">MSEDCL Registered</div>
-                  <div className="text-sm text-koku-orange-light">Vendor — Installer Category</div>
-                </div>
-              </div>
-
-              <div className="rounded-lg p-6 flex items-center gap-4 bg-koku-dark bg-opacity-80">
                 <Shield className="w-10 h-10 flex-shrink-0 text-white" />
                 <div>
-                  <div className="text-lg font-bold text-white">Compliance-First</div>
-                  <div className="text-sm text-koku-orange-light">Installations</div>
+                  <div className="text-lg font-bold text-white">Compliance Builds</div>
+                  <div className="text-sm text-koku-orange-light">Zero-compromise engineering</div>
                 </div>
               </div>
 
               <div className="rounded-lg p-6 flex items-center gap-4 bg-koku-dark bg-opacity-80">
-                <Clock className="w-10 h-10 flex-shrink-0 text-white" />
+                <Award className="w-10 h-10 flex-shrink-0 text-white" />
                 <div>
-                  <div className="text-lg font-bold text-white">OEM Warranties</div>
-                  <div className="text-sm text-koku-orange-light">Modules, Inverters, Structures</div>
+                  <div className="text-lg font-bold text-white">Approved Vendor</div>
+                  <div className="text-sm text-koku-orange-light">MSEDCL & PM Surya Ghar</div>
+                </div>
+              </div>
+
+              <div className="rounded-lg p-6 flex items-center gap-4 bg-koku-dark bg-opacity-80">
+                <Network className="w-10 h-10 flex-shrink-0 text-white" />
+                <div>
+                  <div className="text-lg font-bold text-white">VNM Pioneers</div>
+                  <div className="text-sm text-koku-orange-light">For Housing Societies</div>
                 </div>
               </div>
             </div>

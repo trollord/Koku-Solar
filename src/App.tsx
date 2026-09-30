@@ -18,10 +18,10 @@ function App() {
     const handleRouteChange = () => {
       window.scrollTo(0, 0);
     };
-    
+
     // Listen for route changes
     window.addEventListener('popstate', handleRouteChange);
-    
+
     return () => {
       window.removeEventListener('popstate', handleRouteChange);
     };

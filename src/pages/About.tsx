@@ -1,4 +1,4 @@
-import { Target, Users, Award, TrendingUp, Heart, Leaf, Lightbulb, CheckCircle } from 'lucide-react';
+import { Target, Users, Award, TrendingUp, Heart, Leaf, Lightbulb, CheckCircle, BadgeCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
@@ -30,10 +30,28 @@ export default function About() {
       description: 'Comprehensive maintenance and monitoring services.',
     },
     {
-      icon: Leaf,
-      title: 'Transparent Financial Analysis',
-      description: 'Clear payback calculations and performance expectations.',
+      icon: BadgeCheck,
+      title: 'Registered Vendors',
+      description: 'Approved by MSEDCL (Vendor — Installer Category) & PM Surya Ghar Yojana.',
     },
+  ];
+
+  const team = [
+    {
+      name: 'Chinmay Divekar',
+      role: 'CEO',
+      experience: '9+ years in Solar EPC',
+    },
+    {
+      name: 'Pratiksha Gadmule',
+      role: 'Engineering',
+      experience: '5+ years in Power Systems',
+    },
+    {
+      name: 'Ashok Nair',
+      role: 'Operations',
+      experience: '10+ years in Project Management',
+    }
   ];
 
 
@@ -68,8 +86,11 @@ export default function About() {
               <p className="text-lg text-gray-600 mb-4">
                 We specialize in complete EPC solutions — from initial feasibility studies to long-term maintenance, ensuring our clients achieve reliable returns on their solar investments while contributing to Maharashtra's clean energy transition.
               </p>
+              <p className="text-lg text-gray-600 mb-4">
+                We are officially empaneled under the <strong>PM Surya Ghar Muft Bijli Yojana</strong> and are a registered MSEDCL vendor (Installer Category). We maintain the highest standards of technical execution and regulatory compliance.
+              </p>
               <p className="text-lg text-gray-600">
-                As an MSEDCL Registered Vendor in the Installer Category, we maintain the highest standards of technical execution and regulatory compliance.
+                Beyond execution, we are <strong>VNM Pioneers</strong>, actively leading regulatory advocacy and challenging MSEDCL to enforce Virtual Net Metering (VNM) for housing societies across Maharashtra.
               </p>
             </div>
             <div>
